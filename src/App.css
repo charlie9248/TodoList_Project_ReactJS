@@ -1,0 +1,61 @@
+:root {
+  --mainBlue: #363636;
+  --lightBlue: #0099fd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #fcf7bb;
+  --mainRed: #ff1e56;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--mainWhite);
+}
+
+#header {
+  color: var(--mainWhite);
+  background: var(--mainBlue);
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0;
+  border-bottom: 0.02rem dashed var(--mainYellow);
+}
+
+form {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+form > input[type="text"] {
+  flex: 10;
+}
+
+form > button {
+  flex: 2;
+  color: var(--mainWhite);
+  background: var(--mainBlue);
+  border: none;
+}
+
+.div-btn {
+  float: right;
+  background: var(--mainYellow);
+  color: var(--mainBlue);
+  border: none;
+  border-radius: 40%;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+.div-btn:hover {
+  background: var(--mainRed);
+  color: var(--mainYellow);
+}
+
+#todostyle:hover .div-btn {
+  display: block;
+}
+
+input[type="checkbox"] {
+  margin: 0 0.3rem;
+}
